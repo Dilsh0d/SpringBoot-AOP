@@ -2,13 +2,6 @@ package com.test.test1.utils;
 
 import java.util.*;
 
-/**
- * Created by Dilsh0d.T on 06.12.2018 17:17.
- * <br/>
- *
- * @project: Electron-Ticket
- * @version: 2.0
- */
 public class ClientRequestIPCache {
 
     private Map<String, List<Long>>  cameReqCount;
