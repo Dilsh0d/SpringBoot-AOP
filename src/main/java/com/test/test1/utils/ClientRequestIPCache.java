@@ -15,7 +15,9 @@ public class ClientRequestIPCache {
             createByIpClientList(ip);
         }
 
-        cleanOneMinAgoReq(ip,time);
+        synchronized (ip) {
+            cleanOneMinAgoReq(ip, time);
+        }
 
         if(cameReqCount.get(ip).size()<50){
             cameReqCount.get(ip).add(time);
